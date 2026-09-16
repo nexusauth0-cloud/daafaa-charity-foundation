@@ -53,20 +53,10 @@ export const foundation = {
 export const founder = {
   name: "Abdulwahab Wumi Dauda",
   honorific: "Founder & CEO, DA’AFAA Charity Foundation",
-  born: "7th November, 1997",
-  tribe: "Gbagyi",
-  stateOfOrigin: "Federal Capital Territory (FCT), Nigeria",
-  lga: "Gwagwalada, Abuja",
   address: "New Kutunku, Back of Abattoir, Gwagwalada, Abuja, Nigeria",
   phone: "08059119917",
-  intro: [
-    "Abdulwahab Wumi Dauda is the Founder and Chief Executive Officer of DA’AFAA Charity Foundation, a humanitarian organization established on 2nd February, 2026, with a mission to support orphans, widows, widowers, and less privileged members of society across Nigeria.",
-    "Abdulwahab Wumi Dauda is a proud Gbagyi indigene of the Federal Capital Territory, Nigeria, from Gwagwalada Local Government Area, Abuja. Born on 7th November, 1997, he began his educational journey at UBE Primary School, Gwagwalada, Abuja. He proceeded to Police Secondary School, Minna, where he completed his secondary education from 2008 to 2014. Following his secondary school education, he gained admission into the University of Abuja, where he studied Banking and Finance from 2015 to 2019 and graduated with a Bachelor of Science degree in Banking and Finance, Second Class Lower Division.",
-    "After completing his university education, Abdulwahab proceeded to Nasarawa State, Nigeria, for his National Youth Service Corps (NYSC), where he further developed his experience and commitment to service.",
-  ],
   leadership: [
     "Abdulwahab Wumi Dauda is passionate about assisting people facing hardship, particularly widows, widowers, orphans, and vulnerable families. His desire to contribute to the welfare of others led him to establish DA’AFAA Charity Foundation, through which he seeks to mobilize support, promote compassion, and create opportunities for disadvantaged members of society.",
-    "In addition to his role as Founder and CEO of DA’AFAA Charity Foundation, Abdulwahab serves as the National Assistant Secretary of Muslim Forum for Orphans and Empowerment Nigeria. Through these leadership responsibilities, he participates in efforts focused on humanitarian support and the empowerment of vulnerable people.",
   ],
   values: [
     "As a Muslim, Abdulwahab Wumi Dauda is guided by the principles of compassion, sincerity, honesty, humility, and service to humanity. His commitment to helping orphans and people in need reflects the Islamic encouragement of charity and kindness. The Qur’an, in Surah An-Nisa 4:114, teaches that acts of charity, kindness, and reconciliation, when done seeking Allah’s pleasure, carry great reward.",
@@ -76,14 +66,6 @@ export const founder = {
   future: [
     "Through DA’AFAA Charity Foundation, Abdulwahab Wumi Dauda aspires to build a lasting platform for charitable service, support vulnerable families, encourage educational opportunities, and contribute to the development of a more compassionate society in Nigeria.",
     "His vision is to see a society where orphans, widows, widowers, and less privileged individuals receive care, encouragement, and opportunities to improve their lives.",
-  ],
-  quickFacts: [
-    { label: "Born", value: "7th November, 1997" },
-    { label: "Tribe", value: "Gbagyi" },
-    { label: "State of Origin", value: "Federal Capital Territory (FCT), Nigeria" },
-    { label: "Local Government Area", value: "Gwagwalada, Abuja" },
-    { label: "Education", value: "B.Sc. Banking and Finance, University of Abuja" },
-    { label: "National Role", value: "National Assistant Secretary, Muslim Forum for Orphans and Empowerment Nigeria" },
   ],
 };
 

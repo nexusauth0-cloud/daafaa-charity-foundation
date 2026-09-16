@@ -36,28 +36,12 @@ export function FounderSection() {
               <div className="mt-6 rounded-2xl border border-brand-100 bg-white p-6 shadow-soft">
                 <p className="font-display text-xl font-semibold text-brand-950">{founder.name}</p>
                 <p className="mt-1 text-sm font-medium text-brand-600">{founder.honorific}</p>
-                <dl className="mt-5 space-y-3 text-sm">
-                  {founder.quickFacts.map((fact) => (
-                    <div key={fact.label} className="flex items-start gap-3 border-t border-brand-50 pt-3">
-                      <dt className="w-36 shrink-0 font-medium text-ink-500">{fact.label}</dt>
-                      <dd className="text-ink">{fact.value}</dd>
-                    </div>
-                  ))}
-                </dl>
               </div>
             </div>
           </Reveal>
 
           {/* Biography */}
           <div className="min-w-0">
-            <Reveal delay={140}>
-              <div className="space-y-6 text-base leading-relaxed text-ink-500">
-                {founder.intro.map((para) => (
-                  <p key={para.slice(0, 24)} className="text-pretty">{para}</p>
-                ))}
-              </div>
-            </Reveal>
-
             <div className="mt-12 space-y-12">
               {blocks.map((block, i) => (
                 <Reveal key={block.heading} delay={80 + i * 80}>
