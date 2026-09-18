@@ -10,6 +10,24 @@ export interface Executive {
   alt: string;
 }
 
+/** Shared shape for lightboxable media beyond the executive cards */
+export interface MediaAsset {
+  image: string;
+  modalImage: string;
+  width: number;
+  height: number;
+  alt: string;
+  caption?: string;
+}
+
+export interface ActivityVideo {
+  src: string;
+  poster: string;
+  width: number;
+  height: number;
+  label: string;
+}
+
 export const foundation = {
   name: "DA’AFAA Charity Foundation",
   shortName: "DA’AFAA",
@@ -161,11 +179,132 @@ export interface NavLink {
 export const navLinks: NavLink[] = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
+  { id: "impact", label: "Impact" },
   { id: "founder", label: "Founder" },
   { id: "leadership", label: "Leadership" },
+  { id: "office-project", label: "Office Project" },
   { id: "support", label: "Support" },
   { id: "contact", label: "Contact" },
 ];
+
+export const activities = {
+  eyebrow: "Activities",
+  title: "Our Impact",
+  description:
+    "Charity in action — DA’AFAA Charity Foundation documents the humanitarian activities it carries out in service of its mission.",
+  featureTitle: "Ramadan Food Distribution 2026",
+  featureIntro:
+    "During Ramadan 2026, DA’AFAA Charity Foundation carried out food distribution to support people and families in need. These photographs and videos document the activity.",
+  videosTitle: "Watch the distribution",
+  videosIntro:
+    "Videos supplied by the foundation showing the food distribution activity.",
+  photos: [
+    {
+      image: "/media/activities/food-donation-1.webp",
+      modalImage: "/media/activities/food-donation-1.webp",
+      width: 614,
+      height: 1280,
+      alt: "Photograph from DA’AFAA Charity Foundation’s Ramadan 2026 food distribution",
+      caption: "Ramadan food distribution — 2026",
+    },
+    {
+      image: "/media/activities/food-donation-2.webp",
+      modalImage: "/media/activities/food-donation-2.webp",
+      width: 614,
+      height: 1280,
+      alt: "Photograph from DA’AFAA Charity Foundation’s Ramadan 2026 food distribution",
+      caption: "Ramadan food distribution — 2026",
+    },
+    {
+      image: "/media/activities/food-donation-3.webp",
+      modalImage: "/media/activities/food-donation-3.webp",
+      width: 960,
+      height: 1280,
+      alt: "Photograph from DA’AFAA Charity Foundation’s Ramadan 2026 food distribution",
+      caption: "Ramadan food distribution — 2026",
+    },
+    {
+      image: "/media/activities/food-donation-4.webp",
+      modalImage: "/media/activities/food-donation-4.webp",
+      width: 960,
+      height: 1280,
+      alt: "Photograph from DA’AFAA Charity Foundation’s Ramadan 2026 food distribution",
+      caption: "Ramadan food distribution — 2026",
+    },
+    {
+      image: "/media/activities/food-donation-5.webp",
+      modalImage: "/media/activities/food-donation-5.webp",
+      width: 960,
+      height: 1280,
+      alt: "Photograph from DA’AFAA Charity Foundation’s Ramadan 2026 food distribution",
+      caption: "Ramadan food distribution — 2026",
+    },
+  ],
+  videos: [
+    {
+      src: "/media/activities/food-donation-1.mp4",
+      poster: "/media/activities/food-donation-1-poster.jpg",
+      width: 360,
+      height: 640,
+      label: "Food distribution in progress",
+    },
+    {
+      src: "/media/activities/food-donation-2.mp4",
+      poster: "/media/activities/food-donation-2-poster.jpg",
+      width: 360,
+      height: 640,
+      label: "Food distribution in progress",
+    },
+  ],
+} as const;
+
+export const officeProject = {
+  eyebrow: "Current Project",
+  title: "Our Office Project",
+  description:
+    "DA’AFAA Charity Foundation is working toward developing a permanent office facility to support its humanitarian activities, and is seeking support for the office project.",
+  land: {
+    image: "/media/office-project/land-picture.webp",
+    modalImage: "/media/office-project/land-picture.webp",
+    width: 1280,
+    height: 960,
+    alt: "Photograph of the land for DA’AFAA Charity Foundation’s proposed office facility",
+    caption: "Photograph of the land for the foundation’s proposed office facility",
+  },
+  landNote:
+    "DA’AFAA Charity Foundation is working toward developing a permanent office facility to strengthen its humanitarian activities. The foundation is seeking financial support to build the office, and every contribution brings the project closer to completion.",
+  steps: ["The Land", "The Blueprint", "Design & Support"],
+  blueprint: {
+    image: "/media/office-project/blueprint.webp",
+    modalImage: "/media/office-project/blueprint.webp",
+    width: 1280,
+    height: 853,
+    alt: "The office blueprint for DA’AFAA Charity Foundation’s proposed facility",
+    caption: "The foundation’s office blueprint",
+  },
+  blueprintNote:
+    "A blueprint for the office facility, designed for the foundation. Tap the blueprint to zoom in and inspect it.",
+  graphics: [
+    {
+      image: "/media/office-project/land-design.webp",
+      modalImage: "/media/office-project/land-design.webp",
+      width: 853,
+      height: 1280,
+      alt: "Office project campaign graphic designed by the foundation",
+      caption: "Office project campaign graphic",
+    },
+    {
+      image: "/media/office-project/land-blueprint-design.webp",
+      modalImage: "/media/office-project/land-blueprint-design.webp",
+      width: 853,
+      height: 1280,
+      alt: "Office project campaign graphic with blueprint design, supplied by the foundation",
+      caption: "Office project campaign graphic — blueprint design",
+    },
+  ],
+  cta: "Support Our Office Project",
+  ctaHref: "#support",
+} as const;
 
 export const assets = {
   logo: "/logo.webp",

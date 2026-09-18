@@ -1,8 +1,10 @@
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { AboutSection } from "./components/AboutSection";
+import { ImpactSection } from "./components/ImpactSection";
 import { FounderSection } from "./components/FounderSection";
 import { LeadershipSection } from "./components/LeadershipSection";
+import { OfficeProjectSection } from "./components/OfficeProjectSection";
 import { SupportSection } from "./components/SupportSection";
 import { ContactSection } from "./components/ContactSection";
 import { Footer } from "./components/Footer";
@@ -20,8 +22,10 @@ export default function App() {
       <main>
         <Hero />
         <AboutSection />
+        <ImpactSection />
         <FounderSection />
         <LeadershipSection />
+        <OfficeProjectSection />
         <SupportSection />
         <ContactSection />
       </main>
