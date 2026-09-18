@@ -28,7 +28,7 @@ export function ImpactSection() {
             <button
               type="button"
               onClick={() => setSelected(activities.photos[0])}
-              className="group block w-full text-left focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold-400"
+              className="group mx-auto block w-full max-w-md text-left focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold-400"
               aria-label={`View ${activities.photos[0].alt} enlarged`}
             >
               <figure className="overflow-hidden rounded-3xl border border-white/15 bg-white/[0.06] p-2 shadow-lift backdrop-blur-sm transition-transform duration-300 group-hover:scale-[1.01]">
@@ -103,7 +103,7 @@ export function ImpactSection() {
             <h3 className="font-display text-2xl font-semibold text-cream">{activities.videosTitle}</h3>
             <p className="mt-2 max-w-prose text-sm leading-relaxed text-cream/70">{activities.videosIntro}</p>
           </Reveal>
-          <div className="mt-8 grid gap-8 sm:grid-cols-2">
+          <div className="mx-auto mt-8 grid w-full max-w-2xl gap-8 sm:grid-cols-2">
             {activities.videos.map((video, i) => (
               <Reveal key={video.src} delay={i * 120} className="min-w-0">
                 <figure>

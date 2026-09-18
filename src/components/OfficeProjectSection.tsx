@@ -30,7 +30,7 @@ export function OfficeProjectSection() {
             <button
               type="button"
               onClick={() => setSelected({ asset: officeProject.land, zoomable: false })}
-              className="group block w-full text-left focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold-500"
+              className="group mx-auto block w-full max-w-md text-left focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold-500"
               aria-label={`View ${officeProject.land.alt} enlarged`}
             >
               <figure className="overflow-hidden rounded-3xl border border-brand-100 bg-white p-2 shadow-lift transition-shadow duration-300 group-hover:shadow-card">
@@ -89,7 +89,7 @@ export function OfficeProjectSection() {
             <button
               type="button"
               onClick={() => setSelected({ asset: officeProject.blueprint, zoomable: true })}
-              className="group mx-auto mt-10 block w-full max-w-3xl text-left focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold-500"
+              className="group mx-auto mt-10 block w-full max-w-2xl text-left focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold-500"
               aria-label={`View ${officeProject.blueprint.alt} enlarged`}
             >
               <figure className="overflow-hidden rounded-3xl border border-brand-100 bg-white p-3 shadow-card transition-shadow duration-300 group-hover:shadow-lift">
@@ -119,7 +119,7 @@ export function OfficeProjectSection() {
               description="Official campaign graphics designed for and supplied by the foundation."
             />
           </Reveal>
-          <div className="mx-auto mt-10 grid max-w-4xl gap-8 sm:grid-cols-2">
+          <div className="mx-auto mt-10 grid max-w-3xl gap-8 sm:grid-cols-2">
             {officeProject.graphics.map((graphic, i) => (
               <Reveal key={graphic.image} delay={i * 100} className="min-w-0">
                 <button
